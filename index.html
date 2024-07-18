@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R&K</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icon.png">
+</head>
+<body>
+    <div class="container">
+        <div id="login-form">
+            <h2>Enter Password</h2>
+            <input type="password" id="password" placeholder="Password">
+            <button onclick="checkPassword()">Submit</button>
+            <p id="error-message"></p>
+        </div>
+        <div id="protected-content" style="display: none;">
+            <div class="tabs">
+                <div class="tab" onclick="showPage('home')">Home</div>
+                <div class="tab" onclick="showPage('pictures')">Pictures</div>
+                <div class="tab" onclick="showPage('games')">Games</div>
+            </div>
+            <div class="content" id="home">
+                <h1>Welcome to My Website</h1>
+                <p>This is the home page content.</p>
+            </div>
+            <div class="content" id="pictures" style="display: none;">
+                <h1>Pictures</h1>
+                <p>Display your pictures here.</p>
+            </div>
+            <div class="content" id="games" style="display: none;">
+                <h1>Games</h1>
+                <div class="games-grid">
+                    <a href="https://connectionsplus.io/game/nRgcyC" class="game-link">
+                        <div class="game-image">
+                            <img src="connections.png" alt="Game 1">
+                        </div>
+                    </a>
+                    <h2>Connections</h2>
+                    <a href="game2.html" class="game-link">
+                        <div class="game-image">
+                            <img src="crossword.png" alt="Game 2">
+                        </div>
+                        <span>Crossword</span>
+                    </a>
+                    <!-- Add more game links as needed -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+</body>
+</html>
