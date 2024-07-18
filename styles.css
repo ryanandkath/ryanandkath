@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+#login-form {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#protected-content {
+    display: none;
+}
+
+/* Navigation tabs */
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+.tab {
+    cursor: pointer;
+}
+/* Page content */
+.content {
+    padding: 20px;
+}
+/* Dynamic grid layout for games */
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+    gap: 20px;
+    justify-content: center; /* Center the columns */
+}
+.game-link {
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.game-image {
+    width: 100%;
+    max-width: 150px; /* Limit image width to 25% of the screen */
+    height: auto;
+    border-radius: 50%;
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
