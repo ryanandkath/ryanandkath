@@ -1,13 +1,14 @@
+// IF YOU'RE READING THIS PLEASE DON'T GO ANY FURTHER PLEASE AND IF YOU DO YOU REALLY SUCK
+
 function checkPassword() {
-    // Check if password is already verified during this session
     if (sessionStorage.getItem("authenticated") !== "true") {
         var password = prompt("Please enter the password to access this site:", "");
-        if (password === "Teamo") {  // Replace 'yourPassword' with the actual password you choose
-            sessionStorage.setItem("authenticated", "true");  // Set the session as authenticated
-        } else if (password === "teamo"){  // Replace 'yourPassword' with the actual password you choose
-            sessionStorage.setItem("authenticated", "true");  // Set the session as authenticated
+        if (password === "Teamo") {
+            sessionStorage.setItem("authenticated", "true");
+        } else if (password === "teamo"){
+            sessionStorage.setItem("authenticated", "true");  
         } else {
-            window.location = "about:blank";  // Redirect to a blank page if the password is incorrect
+            window.location = "about:blank";
         }
     }
 }
