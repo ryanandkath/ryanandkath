@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R & K</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <link rel="icon" href="icon.ico">
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="games.html">Games</a>
+            <a href="gallery.html">Gallery</a>
+        </nav>
+    </header>
+</head>
+<body>
+    <div id="randomImageContainer"></div>
+    <script>
+        window.onload = function() {
+            displayRandomImage();
+        };
+
+        function displayRandomImage() {
+            var images = [
+                // '1.gif',
+                // '2.gif',
+                // '3.gif',
+                // '4.gif',
+                // '5.gif',
+                // '6.gif',
+                // '7.gif',
+                // '8.gif',
+                // '9.gif',
+                // '1.png',
+                // '2.png',
+                // '3.png',
+                // '4.png',
+                // '5.png',
+                '6.png',
+                '7.png',
+                // '8.png',
+                // '9.png',
+                // '10.png',
+                // '11.png',
+                // '12.png',
+                // '13.png',
+                // '14.png',
+                // '15.png',
+                // '16.png',
+                // '17.png',
+                '18.png',
+                // '19.png',
+                // '20.png',
+                // '21.png',
+                // '22.png',
+                // '23.png',
+                // '24.png',
+                // '25.png',
+                // '26.png',
+                // '27.png',
+                // '28.png',
+                // '29.png',
+                // '30.png',
+                // '31.png',
+                // '32.png',
+                // '33.png',
+                // '34.png',
+                // '35.png',
+                // '36.png',
+                // '37.png',
+                // '38.png',
+                // '39.png',
+                // '40.png',
+                // '41.png',
+                // '42.png',
+                // '43.png',
+                // '44.png'
+            ];
+            var imageIndex = Math.floor(Math.random() * images.length);  // Random index
+            var imgElement = document.createElement('img');
+            imgElement.src = images[imageIndex];
+            imgElement.style.height = '100%';  // Set appropriate styling
+            imgElement.style.maxHeight = '650px';
+            document.getElementById('randomImageContainer').appendChild(imgElement);
+        }
+    </script>
+</body>
+</html>
