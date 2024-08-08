@@ -4,6 +4,9 @@ body, html {
     text-align: center;
     margin: 0;
 }
+p{
+    font-size: 20pt;
+}
 header {
     background-color: #0077cc;
     color: white;
